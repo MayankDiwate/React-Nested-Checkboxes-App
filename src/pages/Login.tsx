@@ -31,8 +31,8 @@ const Login = () => {
         email: "",
         phone: "",
       });
-        
-        toast.success("User created successfully");
+
+      toast.success("User created successfully");
       navigate("/");
     }
   };
