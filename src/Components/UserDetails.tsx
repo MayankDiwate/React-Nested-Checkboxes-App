@@ -1,4 +1,5 @@
 import { LogOut } from "lucide-react";
+import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
 const UserDetails = () => {
@@ -8,6 +9,7 @@ const UserDetails = () => {
 
   const logOut = () => {
     localStorage.removeItem("user");
+    toast.success("User logged out successfully");
     navigate("/login");
   };
 
